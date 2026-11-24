@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VOLT | Smart gear, tested and explained</title>
+<meta name="description" content="VOLT is an independent magazine and buyer's guide for wearables, audio and smart home gear.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+<script src="./js/data.js" defer></script>
+<script src="./js/script.js" defer></script>
+</head>
+<body data-page="home">
+<div class="progress" id="progress" aria-hidden="true"></div>
+<header class="site-header" id="siteHeader"></header>
+
+<main id="top">
+  <section class="wrap hero">
+    <div class="hero-copy">
+      <span class="issue">ISSUE 01 • 2026</span>
+      <h1>Smart gear, <em>tested until it breaks.</em></h1>
+      <p class="deck">VOLT lives with wearables, audio and smart home gear for weeks, then tells you plainly what is worth your money.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="magazine.html">Explore Articles</a>
+        <a class="btn btn-ghost" href="guides.html">Browse Products</a>
+      </div>
+      <div class="quick" id="quick"></div>
+    </div>
+
+    <div class="stage" id="stage" aria-hidden="true">
+      <div class="blob b1"></div><div class="blob b2"></div>
+      <div class="layer" data-d="12">
+        <div class="float cover">
+          <svg viewBox="0 0 260 340">
+            <defs><linearGradient id="cg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" style="stop-color:var(--v)"/><stop offset=".55" style="stop-color:var(--m)"/><stop offset="1" style="stop-color:var(--c)"/></linearGradient></defs>
+            <rect width="260" height="340" rx="18" fill="url(#cg)"/>
+            <circle cx="196" cy="120" r="72" fill="#fff" opacity=".16"/>
+            <circle cx="196" cy="120" r="44" fill="#fff" opacity=".2"/>
+            <text x="22" y="64" font-family="Fraunces,Georgia,serif" font-size="46" font-weight="800" fill="#fff">VOLT</text>
+            <rect x="22" y="76" width="64" height="4" rx="2" fill="#fff" opacity=".7"/>
+            <rect x="106" y="146" width="48" height="136" rx="14" fill="#2a1250" opacity=".85"/>
+            <rect x="88" y="170" width="84" height="84" rx="24" fill="#fff"/>
+            <rect x="97" y="179" width="66" height="66" rx="18" fill="#2a1250"/>
+            <path d="M112 224l12-22 8 12 10-18 8 28" stroke="#ffb3c1" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="22" y="304" font-family="Plus Jakarta Sans,sans-serif" font-size="15" font-weight="700" fill="#fff">The week-long watch</text>
+            <text x="22" y="324" font-family="Plus Jakarta Sans,sans-serif" font-size="11" fill="#fff" opacity=".85">Plus 12 gadgets worth owning</text>
+          </svg>
+        </div>
+      </div>
+      <div class="layer" data-d="30"><div class="float chip c1"><svg viewBox="0 0 24 24" width="22" height="22"><path class="iv" d="M13.5 2 4 14h6l-1.5 8L20 9h-6.5z"/></svg><span>7-day battery</span></div></div>
+      <div class="layer" data-d="22"><div class="float chip c2"><svg viewBox="0 0 24 24" width="22" height="22"><path class="ic" d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.3 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><span>4.8 rating</span></div></div>
+      <div class="layer" data-d="40"><div class="float chip c3"><svg viewBox="0 0 24 24" width="22" height="22"><rect class="im" x="6" y="6" width="12" height="12" rx="2.5"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>AMOLED, 1.9 in</span></div></div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true"><div class="track" id="track"><span>Wearables</span><span>Audio</span><span>Smart Home</span><span>Tested for four weeks</span><span>No sponsored scores</span></div></div>
+
+  <section class="wrap sec">
+    <div class="stats">
+      <div class="stat"><b data-count="120" data-suf="+">120+</b><span>devices tested</span></div>
+      <div class="stat"><b data-count="4" data-suf=" wks">4 wks</b><span>of daily use per review</span></div>
+      <div class="stat"><b data-count="0">0</b><span>sponsored scores</span></div>
+      <div class="stat"><b data-count="52">52</b><span>issues a year</span></div>
+    </div>
+  </section>
+
+  <section class="wrap sec">
+    <div class="sec-head"><h2>Top stories</h2><a class="more" href="magazine.html">All articles</a></div>
+    <div class="grid" id="topStories"></div>
+  </section>
+
+  <section class="wrap sec">
+    <div class="sec-head"><h2>Buyer's guide picks</h2><a class="more" href="guides.html">All guides</a></div>
+    <div class="grid pgrid" id="topProducts"></div>
+  </section>
+
+  <div id="nlSlot"></div>
+</main>
+
+<footer class="foot" id="siteFooter"></footer>
+</body>
+</html>

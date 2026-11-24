@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Magazine | VOLT</title>
+<meta name="description" content="Stories, tests and explainers on wearables, audio and smart home gear from VOLT.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+<script src="./js/data.js" defer></script>
+<script src="./js/script.js" defer></script>
+</head>
+<body data-page="magazine">
+<div class="progress" id="progress" aria-hidden="true"></div>
+<header class="site-header" id="siteHeader"></header>
+
+<main id="top">
+  <section class="wrap page-head">
+    <span class="issue">THE MAGAZINE</span>
+    <h1>Stories worth <em>your charge.</em></h1>
+    <p class="deck">Long tests, honest takes and quick fixes. Search by topic or filter by category.</p>
+  </section>
+
+  <section class="wrap sec">
+    <div class="filters">
+      <label class="sr" for="q">Search articles</label>
+      <input class="search" id="q" type="search" placeholder="Search articles" autocomplete="off">
+      <div class="tabs" id="tabs" aria-label="Filter articles by category"></div>
+    </div>
+    <div class="grid" id="feed" aria-live="polite"></div>
+    <p class="sub" id="empty" hidden>No articles match that search. Try another word.</p>
+  </section>
+
+  <div id="nlSlot"></div>
+</main>
+
+<footer class="foot" id="siteFooter"></footer>
+</body>
+</html>
